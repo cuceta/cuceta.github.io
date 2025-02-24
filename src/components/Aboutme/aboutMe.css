@@ -1,0 +1,119 @@
+.about-me {
+    display: flex;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    height: 90vh;
+    padding: 0;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+
+body{
+    height: 100vh;
+    background-image: radial-gradient(circle, #FCCACF, #D28C93);
+    /*background-color: #dca3a9;*/
+
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 90px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.profile-container {
+    position: relative;
+    width: 380px;
+    height: 530px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.oval-background {
+    position: absolute;
+    width: 380px; /* Make oval size match container */
+    height: 530px;
+    background-image: radial-gradient(circle, rgba(248, 232, 218, 0.16), rgba(249, 208, 172, 0.37));
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.profile-image {
+    width: auto;
+    height: 800px;
+    border-radius: 50%;
+    z-index: 1;
+    margin-top: 170px;
+    margin-left: 50px;
+}
+
+.text-container {
+    max-width: 600px;
+    text-align: left;
+}
+
+.text-container h3 {
+    font-size: 24pt;
+    font-family: "Italiana", serif;
+    font-weight: lighter;
+    color: white;
+    margin-bottom: 10px;
+
+}
+
+.text-container h2 {
+    font-size: 24pt;
+    font-family: "American Typewriter";
+    font-weight: normal;
+    color: #157485;
+    margin-bottom: 20px;
+}
+
+.text-container p {
+    font-size: 14pt;
+    font-family: "Jacques Francois", serif;
+    font-weight: lighter;
+    font-style: normal;
+    color: #ffffff;
+    line-height: 1.5;
+}
+
+.social {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+.resume-button{
+    padding: 5px 10px;
+    margin-top: 15px;
+    border-radius: 50px;
+    background: rgba(249, 208, 172, 0.7);
+    border-width: thin;
+    border: white;
+    font-family: "Italiana", serif;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.resume-button:hover{
+    transform: scale(1.2);
+    color: #D28C93;
+}
